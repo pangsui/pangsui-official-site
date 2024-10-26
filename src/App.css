@@ -9,7 +9,7 @@
 :root {
   --primary-color: #08c0dd;
   --secondary-color: #262431;
-  --background-color:#fff0E5
+  --background-color: #fff0e5;
   --tertiary-color: #2f2c3d;
 }
 html,
@@ -33,16 +33,16 @@ ul {
 img {
   max-width: 100%;
 }
-.main{
-  padding: 0 19rem;
+.main {
+  padding: 0 15rem;
 }
 /* Navabar */
 .navbar {
   padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
@@ -127,10 +127,38 @@ img {
   gap: 2rem;
   font-size: 1.2rem;
 }
-
+/* Home */
+.home {
+  /* margin-top: 10rem; */
+}
+.home h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.home h1 span {
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.home p {
+  text-align: justify;
+}
 /* Media Queries */
 
 @media (max-width: 992px) {
+  /* main */
+  .main {
+    padding: 0 3rem;
+  }
+  /* .home {
+    margin-top: 8rem;
+  } */
+  /* navbar */
   .navbar__mobile-menu-toggle i {
     position: relative;
     bottom: 1rem;

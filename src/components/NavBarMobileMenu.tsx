@@ -17,28 +17,57 @@ function NavBarMobileMenu() {
       >
         <ul className="navbar__mobil-menu-list">
           <li className="navbar__mobile-menu-item">
-            <a href="#" className="navbar__mobile-menu-link">
+            <a
+              href="#home"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
               Home
             </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#feature" className="navbar__mobile-menu-link">
-              Features
+            <a
+              href="#portfolio"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
+              portfolio
             </a>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a href="#preview" className="navbar__mobile-menu-link">
-              Previews
+            <a
+              href="#pulications"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
+              Publications
             </a>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a href="#details" className="navbar__mobile-menu-link">
-              Details
+            <a
+              href="#certifications"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
+              Certifications
             </a>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a href="#download" className="navbar__mobile-menu-link">
-              Download
+            <a
+              href="#cv"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
+              CV
+            </a>
+          </li>
+          <li className="navbar__mobile-menu-item">
+            <a
+              href="#contact"
+              className="navbar__mobile-menu-link"
+              onClick={handlClick}
+            >
+              Contact
             </a>
           </li>
         </ul>

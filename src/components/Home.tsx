@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <h1>
         Welcome to <span>Dr. Eng. Pangsui Usifu Linge</span> Official Site
       </h1>

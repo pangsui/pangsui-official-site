@@ -11,27 +11,33 @@ function Navbar() {
         <div className="navbar__menu">
           <ul className="navbar__menu-list">
             <li className="navbar__menu-item">
-              <a href="#" className="navbar__menu-link">
+              <a href="#home" className="navbar__menu-link">
                 Home
               </a>
             </li>
             <li className="navbar__menu-item">
-              <a href="#features" className="navbar__menu-link">
+              <a href="#portfolio" className="navbar__menu-link">
                 Portfolio
               </a>
             </li>
             <li className="navbar__menu-item">
-              <a href="#preview" className="navbar__menu-link">
+              <a href="#publications" className="navbar__menu-link">
                 Publications
               </a>
             </li>
             <li className="navbar__menu-item">
-              <a href="#details" className="navbar__menu-link">
-                Curriculum Vitae
+              <a href="#certifications" className="navbar__menu-link">
+                Certifications
+              </a>
+            </li>
+
+            <li className="navbar__menu-item">
+              <a href="#cv" className="navbar__menu-link">
+                CV
               </a>
             </li>
             <li className="navbar__menu-item">
-              <a href="#download" className="navbar__menu-link">
+              <a href="#contact" className="navbar__menu-link">
                 Contact
               </a>
             </li>

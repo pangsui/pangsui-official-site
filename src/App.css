@@ -34,15 +34,15 @@ img {
   max-width: 100%;
 }
 .main {
-  padding: 0 15rem;
+  padding: 0 6rem;
 }
 /* Navabar */
 .navbar {
   padding: 1rem 2rem;
-  /* position: fixed; */
-  /* top: 0;
+  position: relative;
+  top: 0;
   left: 0;
-  right: 0; */
+  right: 0;
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
@@ -129,10 +129,11 @@ img {
 }
 /* Home */
 .home {
-  /* margin-top: 10rem; */
+  /* height: 22rem; this one causes malfunctioning*/
+  margin-bottom: 4rem;
 }
 .home h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 .home h1 span {
@@ -142,11 +143,69 @@ img {
 }
 .home h2 {
   text-align: center;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 .home p {
   text-align: justify;
+}
+/* Portfolio */
+.portfolio {
+  margin-bottom: 4rem;
+}
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.portfolio-item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  padding-right: 48px;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  /* border-bottom: 4px solid #fff; */
+}
+.title {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.item-content.hidden {
+  display: none;
+}
+.open {
+  border-top: 4px solid #087f5b;
+}
+.plus-minus {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--background-color);
+}
+.title-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.git {
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-right: 1ch;
+}
+.url {
+  font-weight: bold;
+  color: #087f5b;
 }
 /* Media Queries */
 
@@ -163,6 +222,11 @@ img {
     position: relative;
     bottom: 1rem;
   }
+  /* portfolio */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
 }
 @media (max-width: 768px) {
   /* Navbar */
@@ -172,5 +236,13 @@ img {
   .navbar__mobile-menu {
     display: block;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 430px) {
+  /* portfolio */
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 }

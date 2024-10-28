@@ -243,6 +243,10 @@ img {
     display: block;
     cursor: pointer;
   }
+  .home h1 {
+    white-space: normal;
+    word-spacing: 0;
+  }
 }
 
 @media (max-width: 430px) {

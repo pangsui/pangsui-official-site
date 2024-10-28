@@ -16,7 +16,7 @@ function PortFolio() {
   return (
     <section className="portfolio" id="portfolio">
       <h2>Portfolio</h2>
-      <p>List of Completed Projects</p>
+      <p className="paragraph">List of Completed Projects</p>
       <PortFolioItem data={portfolioList} />
     </section>
   );

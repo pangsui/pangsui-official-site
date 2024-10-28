@@ -137,7 +137,7 @@ img {
   text-align: center;
 }
 .home h1 span,
-.portfolio p {
+.portfolio .paragraph {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,7 +161,7 @@ img {
   font-weight: 600;
   color: var(--primary-color);
 }
-.portfolio p {
+.portfolio .paragraph {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.4rem;

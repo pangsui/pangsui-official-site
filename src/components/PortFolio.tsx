@@ -5,9 +5,12 @@ interface PortFolioProps {
   description: string;
   gitHubLink: string;
   url: string;
-  num: number;
-  curOpen: number;
-  setCurOpen: number;
+  num?: number;
+  curOpen?: number;
+  setCurOpen?: React.Dispatch<React.SetStateAction<number>>;
+}
+interface DataProps {
+  data: PortFolioProps[];
 }
 function PortFolio() {
   return (
@@ -17,7 +20,7 @@ function PortFolio() {
     </section>
   );
 }
-function PortFolioItem({ data }) {
+function PortFolioItem({ data }: DataProps) {
   const [curOpen, setCurOpen] = useState(-1); //initially none is open
   return (
     <div className="portfolio-grid">
@@ -49,7 +52,9 @@ function Item({
   const isOpen = num === curOpen;
   function handlePortfolio() {
     // setIsOpen((isOpen) => !isOpen);
-    setCurOpen(isOpen ? -1 : num);
+    if (setCurOpen) {
+      setCurOpen(isOpen ? -1 : num ?? 0);
+    }
   }
   return (
     <div

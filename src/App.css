@@ -136,7 +136,8 @@ img {
   margin-bottom: 2.5rem;
   text-align: center;
 }
-.home h1 span {
+.home h1 span,
+.portfolio p {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -159,6 +160,11 @@ img {
   margin-bottom: 2rem;
   font-weight: 600;
   color: var(--primary-color);
+}
+.portfolio p {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 .portfolio-grid {
   display: grid;

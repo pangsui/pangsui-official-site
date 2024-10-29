@@ -3,15 +3,6 @@ import certificationsList from "../data/certifications.json";
 
 function Certifications() {
   const [certificateIndex, setCertificateIndex] = useState(0);
-  //   function handleCertification() {
-  //     console.log(certificateIndex);
-
-  //     if (
-  //       certificateIndex >= 0 &&
-  //       certificateIndex < certificationsList.length - 1
-  //     )
-  //     setCertificateIndex(() => certificateIndex + 1);
-  //   }
   function handlePdfView() {
     const pdfUrl = certificationsList[certificateIndex].pdfDocument;
     window.open(pdfUrl, "_blank");
@@ -19,14 +10,23 @@ function Certifications() {
   return (
     <section className="certifications" id="certifications">
       <div className="buttons-flex">
-        <button className="btn js" onClick={() => setCertificateIndex(0)}>
+        <button
+          className={`btn js${certificateIndex === 0 ? " animate" : ""}`}
+          onClick={() => setCertificateIndex(0)}
+        >
           JavaScript
         </button>
 
-        <button className="btn html-css" onClick={() => setCertificateIndex(1)}>
+        <button
+          className={`btn html-css${certificateIndex === 1 ? " animate" : ""}`}
+          onClick={() => setCertificateIndex(1)}
+        >
           HTML/CSS
         </button>
-        <button className="btn java" onClick={() => setCertificateIndex(2)}>
+        <button
+          className={`btn java${certificateIndex === 2 ? " animate" : ""}`}
+          onClick={() => setCertificateIndex(2)}
+        >
           Java
         </button>
       </div>

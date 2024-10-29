@@ -38,7 +38,7 @@ img {
 }
 /* Navabar */
 .navbar {
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   position: relative;
   top: 0;
   left: 0;
@@ -54,7 +54,8 @@ img {
 }
 .navbar__logo img {
   border-radius: 50%;
-  width: 90px;
+  width: 80px;
+  height: 80px;
 }
 .navbar__logo:hover::after {
   content: " Dr. PANGSUI USIFU LINGE";
@@ -365,13 +366,20 @@ img {
 /* Media Queries */
 
 @media (max-width: 992px) {
+  /* navbar */
+  .navbar {
+    padding-top: 1.5rem;
+  }
+  .navbar__logo img {
+    width: 75px;
+    height: 75px;
+  }
+
   /* main */
   .main {
     padding: 0 3rem;
   }
-  /* .home {
-    margin-top: 8rem;
-  } */
+
   /* navbar */
 
   .navbar__mobile-menu-toggle i {
@@ -386,6 +394,9 @@ img {
 }
 @media (max-width: 768px) {
   /* Navbar */
+  .navbar {
+    padding-top: 1.4rem;
+  }
   .navbar__menu {
     display: none;
   }
@@ -393,6 +404,12 @@ img {
     display: block;
     cursor: pointer;
   }
+  .navbar__logo img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
   .home h1 {
     /* white-space: normal;
     word-spacing: 0; */
@@ -412,11 +429,20 @@ img {
   .btn {
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
   }
 }
 
 @media (max-width: 430px) {
+  /* navbar */
+  .navbar {
+    padding-top: 1.6rem;
+  }
+  .navbar__logo img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
   /* portfolio */
   .portfolio-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -429,8 +455,6 @@ img {
   .buttons {
     gap: 6rem;
   }
-}
-@media (max-width: 430px) {
   /* publications */
   .numbers {
     gap: 1.5rem;

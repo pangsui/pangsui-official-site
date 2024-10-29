@@ -6,6 +6,7 @@ import Publications from "./components/Publications";
 import CurriculumVitae from "./components/CurriculumVitae";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Home />
         <PortFolio />
         <Publications />
+        <Certifications />
         <CurriculumVitae />
         <Contact />
       </main>

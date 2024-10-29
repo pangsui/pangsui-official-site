@@ -43,11 +43,15 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  /* z-index: 1000; */
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
 }
-
+.navbar.scrolled {
+  position: fixed;
+  background-color: #7950f2;
+  padding: 0.2rem 2rem;
+}
 .navbar__logo img {
   border-radius: 50%;
   width: 90px;
@@ -180,7 +184,9 @@ img {
   padding-right: 48px;
   cursor: pointer;
   border-top: 4px solid #fff;
-  /* border-bottom: 4px solid #fff; */
+  height: 15.8rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .title {
   text-align: center;
@@ -199,11 +205,14 @@ img {
   font-size: 1.1rem;
   font-weight: 900;
   color: var(--background-color);
+  position: relative;
+  left: 2.8rem;
 }
 .title-sign {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 .git {
   font-weight: bold;
@@ -280,7 +289,7 @@ img {
   padding: 10px 15px;
   border-radius: 100px;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 .buttons button:hover {
   opacity: 0.8;
@@ -294,6 +303,60 @@ img {
   border-radius: 20px;
 }
 
+/* Certifications section */
+.buttons-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.5rem 3rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn.java {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn.html-css {
+  background-color: #087f5b;
+  color: #fff;
+}
+.btn.js {
+  background-color: #7950f2;
+  color: #fff;
+}
+.certifications-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+.certifications-title {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.course-summary {
+  text-align: center;
+}
+.download-certification {
+  margin-bottom: 2rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+  color: #087f5b;
+  cursor: pointer;
+}
 /* Media Queries */
 
 @media (max-width: 992px) {
@@ -305,6 +368,7 @@ img {
     margin-top: 8rem;
   } */
   /* navbar */
+
   .navbar__mobile-menu-toggle i {
     position: relative;
     bottom: 1rem;
@@ -335,6 +399,15 @@ img {
   .pulications-title {
     font-size: 1rem;
     text-transform: lowercase;
+  }
+  /* certifications */
+  .buttons-flex {
+    gap: 1rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
   }
 }
 

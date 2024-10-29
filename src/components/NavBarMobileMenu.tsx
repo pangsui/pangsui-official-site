@@ -36,7 +36,7 @@ function NavBarMobileMenu() {
           </li>
           <li className="navbar__mobile-menu-item">
             <a
-              href="#pulications"
+              href="#publications"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >

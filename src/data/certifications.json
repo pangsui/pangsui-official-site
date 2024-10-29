@@ -1,0 +1,17 @@
+[
+  {
+    "title": "The Complete JavaScript Course 2023: From Zero to Expert!",
+    "summary": "Key concepts mastered include JavaScript fundamentals (functions, arrays, objects, loops, strings, etc.), modern object-oriented programming (OOP), and asynchronous JavaScript (event loop, promises, AJAX calls, and APIs).",
+    "pdfDocument": "/certifications/javaScript.pdf"
+  },
+  {
+    "title": "Modern HTML & CSS From The Beginning 2.0 (2024 Revamp)",
+    "summary": "Core skills acquired include creating responsive websites using media queries, semantic HTML elements, and the box model; implementing smooth transitions and adaptable layouts with CSS Grid and Flexbox; managing version control with Git and GitHub; and deploying websites. ",
+    "pdfDocument": "/certifications/html-css.pdf"
+  },
+  {
+    "title": "Java 17 Masterclass: Start Coding in 2024",
+    "summary": "Topics covered include foundational Java concepts like arrays, loops, Lists, ArrayLists, LinkedLists, and autoboxing, along with object-oriented programming (OOP), generics, regular expressions, streams, and exception handling with try-catch statements.",
+    "pdfDocument": "/certifications/java.pdf"
+  }
+]

@@ -1,18 +1,18 @@
 [
   {
-    "title": "Fictional Banking System",
+    "title": "Fictional Banking App",
     "description": "An application that allows users to log in to their accounts, perform basic banking transactions. Use these accounts for testing: user: pul, PIN: 3333, and user: mfm, PIN: 4444.",
     "gitHubLink": "https://github.com/pangsui/pangkist",
     "url": "https://pangskist.netlify.app"
   },
   {
-    "title": "Workout Running/Cycling",
+    "title": "Track My Workout",
     "description": "Use this application to track your workouts by clicking on the map and selecting either a running or cycling workout.",
     "gitHubLink": "https://github.com/pangsui/workouts-pangsui",
     "url": "https://pangsui-workouts-mapty.netlify.app/"
   },
   {
-    "title": "Billshare App",
+    "title": "Billshare/Split App",
     "description": "This app helps two people split their bills whenever they go shopping.",
     "gitHubLink": "https://github.com/pangsui/outing-app",
     "url": "https://pangsui-billing-app.netlify.app"
@@ -36,7 +36,7 @@
     "url": "https://pangsui-tutor.netlify.app"
   },
   {
-    "title": "Bankist App",
+    "title": "Fictional Banking App2",
     "description": "An application that demonstrates advanced DOM manipulation techniques in action",
     "gitHubLink": "",
     "url": "https://pangsuibankist2.netlify.app"

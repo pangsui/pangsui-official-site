@@ -55,7 +55,7 @@ function Publications() {
           className="download-article"
           href={pulicationsList[publicationIndex].link}
         >
-          Downlaod article
+          View this publication
         </a>
         <div className="buttons">
           {publicationIndex > 0 && (

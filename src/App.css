@@ -357,6 +357,11 @@ img {
   color: #087f5b;
   cursor: pointer;
 }
+.btn.animate {
+  position: relative;
+  bottom: 0.8rem;
+  /* transition: all ease 0.3s; */
+}
 /* Media Queries */
 
 @media (max-width: 992px) {

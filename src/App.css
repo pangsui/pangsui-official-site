@@ -50,7 +50,10 @@ img {
 .navbar.scrolled {
   position: fixed;
   background-color: #7950f2;
-  padding: 0.2rem 2rem;
+  /* padding: 0.2rem 2rem; */
+  opacity: 0.8;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 .navbar__logo img {
   border-radius: 50%;
@@ -367,12 +370,9 @@ img {
 
 @media (max-width: 992px) {
   /* navbar */
-  .navbar {
-    padding-top: 1.5rem;
-  }
   .navbar__logo img {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
   }
 
   /* main */
@@ -384,19 +384,21 @@ img {
 
   .navbar__mobile-menu-toggle i {
     position: relative;
-    bottom: 1rem;
+    bottom: 0.3rem;
+    font-size: 1.9rem;
   }
   /* portfolio */
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
   }
+  .message {
+    text-align: start;
+  }
 }
 @media (max-width: 768px) {
   /* Navbar */
-  .navbar {
-    padding-top: 1.4rem;
-  }
+
   .navbar__menu {
     display: none;
   }
@@ -406,13 +408,16 @@ img {
   }
   .navbar__logo img {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
 
-  .home h1 {
-    /* white-space: normal;
-    word-spacing: 0; */
+  .home p {
+    text-align: start;
+  }
+  /* portfolio */
+  .portfolio-item {
+    height: 18.8rem;
   }
   /* publications */
   .numbers {
@@ -435,13 +440,11 @@ img {
 
 @media (max-width: 430px) {
   /* navbar */
-  .navbar {
-    padding-top: 1.6rem;
-  }
+
   .navbar__logo img {
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
   }
   /* portfolio */
   .portfolio-grid {

@@ -6,7 +6,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       // Check if page is scrolled past 50px (adjust as needed)
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);

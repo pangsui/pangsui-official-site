@@ -52,8 +52,6 @@ img {
   background-color: #7950f2;
   /* padding: 0.2rem 2rem; */
   opacity: 0.8;
-  padding-top: 2rem;
-  padding-bottom: 0.5rem;
 }
 .navbar__logo img {
   border-radius: 50%;
@@ -385,7 +383,7 @@ img {
   .navbar__mobile-menu-toggle i {
     position: relative;
     bottom: 0.3rem;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   /* portfolio */
   .portfolio-grid {

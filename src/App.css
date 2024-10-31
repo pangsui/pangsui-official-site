@@ -282,16 +282,22 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 
 .buttons button {
   border: none;
   cursor: pointer;
   padding: 10px 15px;
-  border-radius: 100px;
+  border-radius: 20em;
   font-size: 1.1rem;
   font-weight: 500;
+  background: linear-gradient(
+    0deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
 }
 .buttons button:hover {
   opacity: 0.8;
@@ -303,9 +309,28 @@ img {
   cursor: pointer;
   margin-bottom: 5rem;
   border-radius: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Certifications section */
+.certifications h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.certifications .paragraph {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .buttons-flex {
   display: flex;
   justify-content: center;
@@ -320,24 +345,29 @@ img {
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
+  letter-spacing: 0.05em;
 }
 .btn.java {
   background-color: var(--primary-color);
   color: #fff;
+  letter-spacing: 0.05em;
 }
 .btn.html-css {
   background-color: #087f5b;
   color: #fff;
+  letter-spacing: 0.05em;
 }
 .btn.js {
   background-color: #7950f2;
   color: #fff;
+  letter-spacing: 0.05em;
 }
 .certifications-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
@@ -364,6 +394,65 @@ img {
   bottom: 0.8rem;
   /* transition: all ease 0.3s; */
 }
+
+/* Resume Section */
+.resume h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.resume .paragraph {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resume-btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  /* padding: 0.8em 1.5em 0.8em 1.2em; */
+  padding: 8px 13px;
+  color: white;
+  /* background: #ad5389; */
+  background: linear-gradient(
+    0deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
 /* Media Queries */
 
 @media (max-width: 992px) {
@@ -433,6 +522,7 @@ img {
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
+    letter-spacing: 0.05em;
   }
 }
 

@@ -513,12 +513,12 @@ img {
   .pulications-title {
     font-size: 1rem;
     text-transform: lowercase;
-    max-width: 50ch;
+    max-width: 30ch;
     position: relative;
     left: 2rem;
   }
   .message {
-    max-width: 50ch;
+    max-width: 30ch;
     text-align: center;
     position: relative;
     left: 2rem;
@@ -538,7 +538,7 @@ img {
     letter-spacing: 0.05em;
   }
   .course-summary {
-    max-width: 50ch;
+    max-width: 30ch;
   }
 }
 

@@ -513,7 +513,20 @@ img {
   .pulications-title {
     font-size: 1rem;
     text-transform: lowercase;
+    max-width: 50ch;
+    position: relative;
+    left: 2rem;
   }
+  .message {
+    max-width: 50ch;
+    text-align: center;
+    position: relative;
+    left: 2rem;
+  }
+  .buttons {
+    gap: 1rem;
+  }
+
   /* certifications */
   .buttons-flex {
     gap: 1rem;
@@ -523,6 +536,9 @@ img {
     font-weight: 500;
     padding: 0.5rem 1rem;
     letter-spacing: 0.05em;
+  }
+  .course-summary {
+    max-width: 50ch;
   }
 }
 

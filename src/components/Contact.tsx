@@ -3,18 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-interface FormData {
+interface ContactFormData {
   name: string;
   email: string;
   message: string;
 }
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const initialFormData: ContactFormData = { name: "", email: "", message: "" };
+
+  const [formData, setFormData] = useState<ContactFormData>(initialFormData);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -23,21 +21,22 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-    // Convert FormData to an array of key-value pairs
-    const formEntries = Array.from(formData.entries());
+    const formDataObj = new FormData(form);
+    const formEntries = Array.from(formDataObj.entries());
 
-    // Trigger form submission with Netlify
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formEntries as [string, string][]).toString(),
     })
-      .then(() => alert("Form submitted successfully!"))
+      .then(() => {
+        alert("Form submitted successfully!");
+        setFormData(initialFormData); // Reset the form fields to initial values
+      })
       .catch((error) => alert(error));
   };
   return (

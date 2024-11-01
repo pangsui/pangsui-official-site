@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function NavBarMobileMenu() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -17,58 +18,58 @@ function NavBarMobileMenu() {
       >
         <ul className="navbar__mobil-menu-list">
           <li className="navbar__mobile-menu-item">
-            <a
-              href="#home"
+            <NavLink
               className="navbar__mobile-menu-link"
               onClick={handlClick}
+              to="/"
             >
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="navbar__menu-item">
-            <a
-              href="#portfolio"
+            <NavLink
+              to="/portfolio"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
               portfolio
-            </a>
+            </NavLink>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a
-              href="#publications"
+            <NavLink
+              to="/publication"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
               Publications
-            </a>
+            </NavLink>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a
-              href="#certifications"
+            <NavLink
+              to="/certification"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
               Certifications
-            </a>
+            </NavLink>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a
-              href="#cv"
+            <NavLink
+              to="/resume"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
               CV
-            </a>
+            </NavLink>
           </li>
           <li className="navbar__mobile-menu-item">
-            <a
-              href="#contact"
+            <NavLink
+              to="/contact"
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

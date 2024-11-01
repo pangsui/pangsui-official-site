@@ -1,26 +1,37 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import PortFolio from "./components/PortFolio";
 import Publications from "./components/Publications";
 import CurriculumVitae from "./components/CurriculumVitae";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="main">
-        <Home />
-        <PortFolio />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<PortFolio />} />
+            <Route path="/publication" element={<Publications />} />
+            <Route path="/certification" element={<Certifications />} />
+            <Route path="/resume" element={<CurriculumVitae />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
+
+        {/* <PortFolio />
         <Publications />
         <Certifications />
         <CurriculumVitae />
-        <Contact />
+        <Contact /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

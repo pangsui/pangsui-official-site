@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import NavBarMobileMenu from "./NavBarMobileMenu";
 
 function Navbar() {
@@ -26,42 +27,42 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar__container container">
         <div className="navbar__logo">
-          <a href="/">
+          <NavLink to="/">
             <img src="image/logo.jpeg" alt="Pangsui Logo image" />
-          </a>
+          </NavLink>
         </div>
         <div className="navbar__menu">
           <ul className="navbar__menu-list">
             <li className="navbar__menu-item">
-              <a href="#home" className="navbar__menu-link">
+              <NavLink className="navbar__menu-link" to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menu-item">
-              <a href="#portfolio" className="navbar__menu-link">
+              <NavLink to="/portfolio" className="navbar__menu-link">
                 Portfolio
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menu-item">
-              <a href="#publications" className="navbar__menu-link">
+              <NavLink to="/publication" className="navbar__menu-link">
                 Publications
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menu-item">
-              <a href="#certifications" className="navbar__menu-link">
+              <NavLink to="/certification" className="navbar__menu-link">
                 Certifications
-              </a>
+              </NavLink>
             </li>
 
             <li className="navbar__menu-item">
-              <a href="#cv" className="navbar__menu-link">
-                CV
-              </a>
+              <NavLink to="/resume" className="navbar__menu-link">
+                Resume
+              </NavLink>
             </li>
             <li className="navbar__menu-item">
-              <a href="#contact" className="navbar__menu-link">
+              <NavLink to="/contact" className="navbar__menu-link">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

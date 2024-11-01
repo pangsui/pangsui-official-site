@@ -1,5 +1,6 @@
 import { useState } from "react";
 import portfolioList from "../data/portfolio.json";
+import Navbar from "./Navbar";
 interface PortFolioProps {
   title: string;
   description: string;
@@ -14,11 +15,14 @@ interface DataProps {
 }
 function PortFolio() {
   return (
-    <section className="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
-      <p className="paragraph">List of Completed Projects</p>
-      <PortFolioItem data={portfolioList} />
-    </section>
+    <>
+      <Navbar />
+      <section className="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <p className="paragraph">List of Completed Projects</p>
+        <PortFolioItem data={portfolioList} />
+      </section>
+    </>
   );
 }
 function PortFolioItem({ data }: DataProps) {

@@ -19,7 +19,13 @@ function Contact() {
         </p>
         <p>Or leave me a message</p>
       </div>
-      <form name="contact">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={() => ""}
+        netlify-honeypot="bot-field"
+      >
         <div className="form-group">
           <label className="visually-hidden">Company Name</label>
           <input
@@ -27,6 +33,7 @@ function Contact() {
             id="first-name"
             name="first-name"
             placeholder="name"
+            required
           />
         </div>
         <div className="form-group">
@@ -36,6 +43,7 @@ function Contact() {
             id="email"
             name="email"
             placeholder="email address"
+            required
           />
         </div>
         <div className="form-group">
@@ -44,6 +52,7 @@ function Contact() {
             name="message"
             id="message"
             placeholder="enter message"
+            required
           ></textarea>
         </div>
         <div className="form-group">

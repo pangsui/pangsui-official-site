@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
         <p>Or leave me a message</p>
       </div>
       <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <div className="form-group">
           <label className="visually-hidden">Company Name</label>
           <input

@@ -521,6 +521,32 @@ textarea:focus {
   padding-right: 0.5rem;
 }
 
+/* Footer section */
+.footer {
+  border-top: 1px solid #aaa;
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      margin: 0.2rem;
+    }
+  }
+}
+.footer-icons i {
+  padding-right: 0.5rem;
+}
+.footer-icons i:hover {
+  color: var(--primary-color);
+}
 /* Media Queries */
 
 @media (max-width: 992px) {
@@ -626,8 +652,12 @@ textarea:focus {
     padding: 0 0.9rem;
     margin-bottom: 3rem;
   }
+  /* footer */
+  .footer-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
-
 @media (max-width: 430px) {
   /* navbar */
 

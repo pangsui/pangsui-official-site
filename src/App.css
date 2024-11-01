@@ -507,24 +507,37 @@ img {
     height: 18.8rem;
   }
   /* publications */
+  .publications-content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
   .numbers {
     gap: 5rem;
+    margin-bottom: -6rem;
+  }
+  .publications-heading {
+    margin-bottom: 4.5rem;
   }
   .pulications-title {
     font-size: 1rem;
     text-transform: lowercase;
     max-width: 30ch;
     position: relative;
-    left: 2rem;
+    /* left: 3rem; */
+    margin-bottom: -4rem;
   }
   .message {
     max-width: 30ch;
     text-align: center;
     position: relative;
-    left: 2rem;
+    /* left: 3rem; */
+    margin-bottom: -1rem;
   }
   .buttons {
-    gap: 1rem;
+    flex-direction: column;
   }
 
   /* certifications */

@@ -623,8 +623,8 @@ textarea:focus {
   }
   /* contact */
   .contact {
-    padding: 0 1rem;
-    margin-bottom: 4rem;
+    padding: 0 0.9rem;
+    margin-bottom: 3rem;
   }
 }
 

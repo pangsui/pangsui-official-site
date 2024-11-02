@@ -58,7 +58,7 @@ function NavBarMobileMenu() {
               className="navbar__mobile-menu-link"
               onClick={handlClick}
             >
-              CV
+              Resume
             </a>
           </li>
           <li className="navbar__mobile-menu-item">

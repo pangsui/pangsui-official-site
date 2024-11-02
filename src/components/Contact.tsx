@@ -9,7 +9,7 @@ interface ContactFormData {
   message: string;
 }
 
-const Contact: React.FC = () => {
+const Contact = React.forwardRef<HTMLElement, object>((props, ref) => {
   const initialFormData: ContactFormData = { name: "", email: "", message: "" };
 
   const [formData, setFormData] = useState<ContactFormData>(initialFormData);
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
       .catch((error) => alert(error));
   };
   return (
-    <div className="contact" id="contact">
+    <section ref={ref} className="contact smooth-scrolling " id="contact">
       <div className="contact-text">
         <h2 className="contact-heading">Let's Work Together</h2>
         <p>
@@ -96,8 +96,8 @@ const Contact: React.FC = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
-};
+});
 
 export default Contact;

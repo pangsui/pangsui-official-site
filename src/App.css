@@ -33,6 +33,14 @@ ul {
 img {
   max-width: 100%;
 }
+/* for smooth scrolling */
+.section--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+.smooth-scrolling {
+  transition: all 1.5s ease-in-out;
+}
 .main {
   padding: 0 6rem;
 }

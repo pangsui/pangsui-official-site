@@ -1,4 +1,6 @@
-function Home() {
+import React from "react";
+
+const Home = React.forwardRef<HTMLElement, object>(() => {
   return (
     <section className="home" id="home">
       <h1>
@@ -20,6 +22,6 @@ function Home() {
       </p>
     </section>
   );
-}
+});
 
 export default Home;

@@ -1,7 +1,8 @@
+import React from "react";
 import { useState } from "react";
 import pulicationsList from "../data/publications.json";
 
-function Publications() {
+const Publications = React.forwardRef<HTMLElement, object>((props, ref) => {
   const [publicationIndex, setPublicationIndex] = useState(0); //create state and set dafault value
   // const [isOpen, setIsOpen] = useState(true);
 
@@ -16,7 +17,11 @@ function Publications() {
   }
 
   return (
-    <section className="pulications" id="publications">
+    <section
+      ref={ref}
+      className="pulications smooth-scrolling "
+      id="publications"
+    >
       <h2 className="publications-paragraph">Publications</h2>
       <p className="publications-heading">List of Scientific Publications</p>
       <div className="numbers">
@@ -92,5 +97,5 @@ function Publications() {
       </div>
     </section>
   );
-}
+});
 export default Publications;

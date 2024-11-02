@@ -55,7 +55,7 @@ function Navbar() {
 
             <li className="navbar__menu-item">
               <a href="#cv" className="navbar__menu-link">
-                CV
+                Resume
               </a>
             </li>
             <li className="navbar__menu-item">

@@ -1,6 +1,7 @@
-function Footer() {
+import React from "react";
+const Footer = React.forwardRef<HTMLElement, object>((props, ref) => {
   return (
-    <footer className="footer">
+    <footer ref={ref} className="footer smooth-scrolling ">
       <div className="container footer-flex">
         <p>Pangsui Tech&copy; {new Date().getFullYear()}</p>
         <div>
@@ -36,5 +37,5 @@ function Footer() {
       </div>
     </footer>
   );
-}
+});
 export default Footer;

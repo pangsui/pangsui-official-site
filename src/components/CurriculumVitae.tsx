@@ -1,7 +1,6 @@
-// import { useState } from "react";
+import React from "react";
 import resumeList from "../data/resume.json";
-
-function CurriculumVitae() {
+const CurriculumVitae = React.forwardRef<HTMLElement, object>((props, ref) => {
   // const [resumeIndex, setResumeIndex] = useState(0);
 
   function handleCVEG() {
@@ -14,7 +13,7 @@ function CurriculumVitae() {
   }
 
   return (
-    <section className="resume" id="cv">
+    <section ref={ref} className="resume smooth-scrolling " id="cv">
       <h2 className="resumer-heading">Resume</h2>
       <p className="paragraph">Download the English or French Version</p>
       <div className="resume-btn-flex">
@@ -55,6 +54,6 @@ function CurriculumVitae() {
       </div>
     </section>
   );
-}
+});
 
 export default CurriculumVitae;

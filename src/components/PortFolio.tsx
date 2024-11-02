@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import portfolioList from "../data/portfolio.json";
 interface PortFolioProps {
@@ -12,15 +13,16 @@ interface PortFolioProps {
 interface DataProps {
   data: PortFolioProps[];
 }
-function PortFolio() {
+
+const PortFolio = React.forwardRef<HTMLElement, object>((props, ref) => {
   return (
-    <section className="portfolio" id="portfolio">
+    <section ref={ref} className="portfolio smooth-scrolling " id="portfolio">
       <h2>Portfolio</h2>
       <p className="paragraph">List of Completed Projects</p>
       <PortFolioItem data={portfolioList} />
     </section>
   );
-}
+});
 function PortFolioItem({ data }: DataProps) {
   const [curOpen, setCurOpen] = useState(-1); //initially none is open
   return (

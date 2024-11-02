@@ -1,14 +1,19 @@
 import { useState } from "react";
+import React from "react";
 import certificationsList from "../data/certifications.json";
 
-function Certifications() {
+const Certifications = React.forwardRef<HTMLElement, object>((props, ref) => {
   const [certificateIndex, setCertificateIndex] = useState(0);
   function handlePdfView() {
     const pdfUrl = certificationsList[certificateIndex].pdfDocument;
     window.open(pdfUrl, "_blank");
   }
   return (
-    <section className="certifications" id="certifications">
+    <section
+      ref={ref}
+      className="certifications smooth-scrolling "
+      id="certifications"
+    >
       <h2>Certifications</h2>
       <p className="paragraph">List of Certified Courses</p>
       <div className="buttons-flex">
@@ -65,6 +70,6 @@ function Certifications() {
       </div>
     </section>
   );
-}
+});
 
 export default Certifications;

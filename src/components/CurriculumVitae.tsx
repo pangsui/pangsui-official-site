@@ -1,6 +1,6 @@
 import React from "react";
 import resumeList from "../data/resume.json";
-const CurriculumVitae = React.forwardRef<HTMLElement, object>((props, ref) => {
+const CurriculumVitae = React.forwardRef<HTMLElement, object>((_, ref) => {
   // const [resumeIndex, setResumeIndex] = useState(0);
 
   function handleCVEG() {

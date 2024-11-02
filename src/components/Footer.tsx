@@ -1,5 +1,5 @@
 import React from "react";
-const Footer = React.forwardRef<HTMLElement, object>((props, ref) => {
+const Footer = React.forwardRef<HTMLElement, object>((_, ref) => {
   return (
     <footer ref={ref} className="footer smooth-scrolling ">
       <div className="container footer-flex">

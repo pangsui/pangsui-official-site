@@ -14,7 +14,7 @@ interface DataProps {
   data: PortFolioProps[];
 }
 
-const PortFolio = React.forwardRef<HTMLElement, object>((props, ref) => {
+const PortFolio = React.forwardRef<HTMLElement, object>((_, ref) => {
   return (
     <section ref={ref} className="portfolio smooth-scrolling " id="portfolio">
       <h2>Portfolio</h2>

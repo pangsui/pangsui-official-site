@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 import certificationsList from "../data/certifications.json";
 
-const Certifications = React.forwardRef<HTMLElement, object>((props, ref) => {
+const Certifications = React.forwardRef<HTMLElement, object>((_, ref) => {
   const [certificateIndex, setCertificateIndex] = useState(0);
   function handlePdfView() {
     const pdfUrl = certificationsList[certificateIndex].pdfDocument;

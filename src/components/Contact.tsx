@@ -9,7 +9,7 @@ interface ContactFormData {
   message: string;
 }
 
-const Contact = React.forwardRef<HTMLElement, object>((props, ref) => {
+const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
   const initialFormData: ContactFormData = { name: "", email: "", message: "" };
 
   const [formData, setFormData] = useState<ContactFormData>(initialFormData);

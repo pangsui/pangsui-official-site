@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import pulicationsList from "../data/publications.json";
 
-const Publications = React.forwardRef<HTMLElement, object>((props, ref) => {
+const Publications = React.forwardRef<HTMLElement, object>((_, ref) => {
   const [publicationIndex, setPublicationIndex] = useState(0); //create state and set dafault value
   // const [isOpen, setIsOpen] = useState(true);
 

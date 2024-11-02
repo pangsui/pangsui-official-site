@@ -24,13 +24,13 @@ const Footer = React.forwardRef<HTMLElement, object>((_, ref) => {
           <a href="https://www.facebook.com/pangsui.linge" target="_blanc">
             <i className="fab fa-facebook fa-2x"></i>
           </a>
-          <a href="#" target="_blanc">
+          <a href="#">
             <i className="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="#" target="_blanc">
+          <a href="#">
             <i className="fab fa-twitter fa-2x"></i>
           </a>
-          <a href="#" target="_blanc">
+          <a href="#">
             <i className="fab fa-tumblr fa-2x"></i>
           </a>
         </div>

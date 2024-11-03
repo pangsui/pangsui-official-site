@@ -472,6 +472,13 @@ img {
   font-weight: 600;
   color: var(--primary-color);
 }
+/* styling form submission message */
+.form-status {
+  text-align: center;
+  color: #28a745;
+  font-size: 1.2rem;
+  font-family: inherit;
+}
 input,
 textarea {
   border: none;

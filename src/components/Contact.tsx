@@ -29,6 +29,7 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
     }
   };
   {
+    // Set the timeout to clear the status after 5 seconds
     setTimeout(() => {
       setStatus("");
     }, 5000);

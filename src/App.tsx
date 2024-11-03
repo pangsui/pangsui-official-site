@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const allSections = sectionRefs.current;
-
+    // console.log(allSections);
     const obsCallback: IntersectionObserverCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;

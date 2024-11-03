@@ -4,6 +4,7 @@ import certificationsList from "../data/certifications.json";
 
 const Certifications = React.forwardRef<HTMLElement, object>((_, ref) => {
   const [certificateIndex, setCertificateIndex] = useState(0);
+
   function handlePdfView() {
     const pdfUrl = certificationsList[certificateIndex].pdfDocument;
     window.open(pdfUrl, "_blank");

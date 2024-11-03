@@ -1,12 +1,12 @@
 import React from "react";
 import resumeList from "../data/resume.json";
-const CurriculumVitae = React.forwardRef<HTMLElement, object>((_, ref) => {
-  // const [resumeIndex, setResumeIndex] = useState(0);
 
+const CurriculumVitae = React.forwardRef<HTMLElement, object>((_, ref) => {
   function handleCVEG() {
     const pdfUrl = resumeList[0].pdfDocument;
     window.open(pdfUrl, "_blank");
   }
+
   function handleCVFR() {
     const pdfUrl = resumeList[1].pdfDocument;
     window.open(pdfUrl, "_blank");

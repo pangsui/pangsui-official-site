@@ -28,7 +28,11 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
       setStatus("An error occurred. Please try again later.");
     }
   };
-
+  {
+    setTimeout(() => {
+      setStatus("");
+    }, 5000);
+  }
   return (
     <section ref={ref} className="contact smooth-scrolling" id="contact">
       <div className="contact-text">
@@ -46,6 +50,8 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
         </p>
         <p>Or leave me a message</p>
       </div>
+      {status && <p className="form-status">{status}</p>}
+
       <form name="contact" onSubmit={handleSubmit}>
         <div className="form-group">
           <label className="visually-hidden" htmlFor="name">
@@ -88,7 +94,6 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
           </button>
         </div>
       </form>
-      {status && <p className="form-status">{status}</p>}
     </section>
   );
 });

@@ -11,6 +11,13 @@ const CurriculumVitae = React.forwardRef<HTMLElement, object>((_, ref) => {
     const pdfUrl = resumeList[1].pdfDocument;
     window.open(pdfUrl, "_blank");
   }
+  // experimenting on useEffect().The CV will be downlaod on page reload
+  // useEffect(() => {
+  //   handleCVEG();
+  //   handleCVFR();
+  //   return () => {
+  //   };
+  // }, []);
 
   return (
     <section ref={ref} className="resume smooth-scrolling " id="cv">

@@ -1,46 +1,36 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-interface ContactFormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
-  const initialFormData: ContactFormData = { name: "", email: "", message: "" };
+  const [status, setStatus] = useState<string>("");
 
-  const [formData, setFormData] = useState<ContactFormData>(initialFormData);
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    try {
+      const response = await fetch("https://formspree.io/f/xyzgwvoe", {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        form.reset();
+      } else {
+        setStatus("Failed to send the message. Please try again.");
+      }
+    } catch {
+      setStatus("An error occurred. Please try again later.");
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.target as HTMLFormElement;
-    const formDataObj = new FormData(form);
-    const formEntries = Array.from(formDataObj.entries());
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formEntries as [string, string][]).toString(),
-    })
-      .then(() => {
-        alert("Form submitted successfully!");
-        setFormData(initialFormData); // Reset the form fields to initial values
-      })
-      .catch((error) => alert(error));
-  };
   return (
-    <section ref={ref} className="contact smooth-scrolling " id="contact">
+    <section ref={ref} className="contact smooth-scrolling" id="contact">
       <div className="contact-text">
         <h2 className="contact-heading">Let's Work Together</h2>
         <p>
@@ -56,36 +46,38 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
         </p>
         <p>Or leave me a message</p>
       </div>
-      <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label className="visually-hidden">Company Name</label>
+          <label className="visually-hidden" htmlFor="name">
+            Company Name
+          </label>
           <input
             type="text"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            id="name"
             required
             placeholder="name"
           />
         </div>
         <div className="form-group">
-          <label className="visually-hidden">Email Address</label>
+          <label className="visually-hidden" htmlFor="email">
+            Email Address
+          </label>
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            id="email"
             required
             placeholder="email address"
           />
         </div>
         <div className="form-group">
-          <label className="visually-hidden">Message</label>
+          <label className="visually-hidden" htmlFor="message">
+            Message
+          </label>
           <textarea
             name="message"
-            value={formData.message}
-            onChange={handleChange}
+            id="message"
             required
             placeholder="enter message"
           ></textarea>
@@ -96,6 +88,7 @@ const Contact = React.forwardRef<HTMLElement, object>((_, ref) => {
           </button>
         </div>
       </form>
+      {status && <p className="form-status">{status}</p>}
     </section>
   );
 });

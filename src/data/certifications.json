@@ -13,5 +13,10 @@
     "title": "Java 17 Masterclass: Start Coding in 2024",
     "summary": "Topics covered include foundational Java concepts like arrays, loops, Lists, ArrayLists, LinkedLists, and autoboxing, along with object-oriented programming (OOP), generics, regular expressions, streams, and exception handling with try-catch statements.",
     "pdfDocument": "/certifications/java.pdf"
+  },
+  {
+    "title": "",
+    "summary": "Click on any of the buttons to view the course content and the certification obtained 😇",
+    "pdfDocument": ""
   }
 ]

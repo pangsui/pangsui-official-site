@@ -18,6 +18,12 @@
     "url": "https://pangsui-billing-app.netlify.app"
   },
   {
+    "title": "World Wise App",
+    "description": "This app shows a list of all places and countries that a person has visited. STILL UNDER DEVELOPMENT😇",
+    "gitHubLink": "https://github.com/pangsui/world-wise",
+    "url": "https://pangsui-world-wise.netlify.app/"
+  },
+  {
     "title": "Items Packed Travel App",
     "description": "This app ensures you pack all the necessary items for each journey",
     "gitHubLink": "https://github.com/pangsui/pangsui-travel-list",

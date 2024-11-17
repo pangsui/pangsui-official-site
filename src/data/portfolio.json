@@ -1,7 +1,7 @@
 [
   {
     "title": "Movies Watched",
-    "description": "An Application that allows users to fetch movies and rate them after they have watched them.",
+    "description": "An application that allows users to fetch movies and rate them after watching.",
     "gitHubLink": "https://github.com/pangsui/third-project",
     "url": "https://pangsui-movies.netlify.app/"
   },

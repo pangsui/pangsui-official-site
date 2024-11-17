@@ -1,5 +1,11 @@
 [
   {
+    "title": "Movies Watched",
+    "description": "An Application that allows users to fetch movies and rate them after they have watched them.",
+    "gitHubLink": "https://github.com/pangsui/third-project",
+    "url": "https://pangsui-movies.netlify.app/"
+  },
+  {
     "title": "Fictional Banking App",
     "description": "An application that allows users to log in to their accounts, perform basic banking transactions. Use these accounts for testing: user: pul, PIN: 3333, and user: mfm, PIN: 4444.",
     "gitHubLink": "https://github.com/pangsui/pangkist",
@@ -52,11 +58,5 @@
     "description": "An application where two players roll a dice, and the first to reach a 100 wins. Roll dice and hold your score",
     "gitHubLink": "https://github.com/pangsui/pig-game-version-2",
     "url": "https://pangsui-pig-game.netlify.app"
-  },
-  {
-    "title": "Lumina Creative App",
-    "description": "An application that demonstrates advanced DOM manipulation techniques in action",
-    "gitHubLink": "https://github.com/pangsui/pangsui-luminity",
-    "url": "https://pangsuiluminal.netlify.app"
   }
 ]

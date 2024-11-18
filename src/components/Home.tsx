@@ -8,18 +8,19 @@ const Home = React.forwardRef<HTMLElement, object>(() => {
       </h1>
       <h2>Professional Summary</h2>
       <p>
-        I am a solution-oriented Full Stack Developer with a PhD in Electrical
-        Engineering and a strong foundation in web development from Wild Code
-        School and the Udemy online platform. Proficient in HTML, CSS,
-        JavaScript, TypeScript, Node, Express and React, I have completed
-        multiple personal projects that showcase my skills in building dynamic,
-        responsive web applications. Experienced in Agile methodologies and
-        Scrum practices, I am adept at working in iterative, collaborative
-        environments to deliver high-quality solutions that align with team
-        goals and project timelines. Passionate about various backend
-        technologies and exploring opportunities in data science, I am eager to
-        contribute to a collaborative team and continue growing my expertise in
-        the tech industry.
+        I am a solution-oriented Front-End Developer with a PhD in Electrical
+        Engineering, bringing strong problem-solving and critical thinking
+        skills honed through rigorous academic research. With a comprehensive
+        foundation in web development from Wild Code School and Udemy, I am
+        proficient in HTML, CSS, JavaScript, TypeScript, Node.js, Express, and
+        React. I have developed multiple personal projects that showcase my
+        ability to create dynamic, responsive web applications. Experienced with
+        Agile methodologies and Scrum practices, I thrive in iterative,
+        collaborative environments and am dedicated to delivering high-quality
+        solutions that align with team objectives and project timelines.
+        Passionate about backend technologies and exploring data science
+        opportunities, I am eager to contribute to a collaborative team and
+        expand my expertise in the tech industry
       </p>
     </section>
   );

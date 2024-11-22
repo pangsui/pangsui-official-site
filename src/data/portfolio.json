@@ -1,62 +1,57 @@
 [
-  {
-    "title": "Movies Watched",
-    "description": "An application that allows users to fetch movies and rate them after watching.",
-    "gitHubLink": "https://github.com/pangsui/third-project",
-    "url": "https://pangsui-movies.netlify.app/"
-  },
-  {
-    "title": "Fictional Banking App",
-    "description": "An application that allows users to log in to their accounts, perform basic banking transactions. Use these accounts for testing: user: pul, PIN: 3333, and user: mfm, PIN: 4444.",
-    "gitHubLink": "https://github.com/pangsui/pangkist",
-    "url": "https://pangskist.netlify.app"
-  },
-  {
-    "title": "Track My Workout",
-    "description": "Use this application to track your workouts by clicking on the map and selecting either a running or cycling workout.",
-    "gitHubLink": "https://github.com/pangsui/workouts-pangsui",
-    "url": "https://pangsui-workouts-mapty.netlify.app/"
-  },
-  {
-    "title": "Billshare/Split App",
-    "description": "This app helps two people split their bills whenever they go shopping.",
-    "gitHubLink": "https://github.com/pangsui/outing-app",
-    "url": "https://pangsui-billing-app.netlify.app"
-  },
-  {
-    "title": "World Wise App",
-    "description": "This app shows a list of all places and countries that a person has visited. STILL UNDER DEVELOPMENT😇",
-    "gitHubLink": "https://github.com/pangsui/world-wise",
-    "url": "https://pangsui-world-wise.netlify.app/"
-  },
-  {
-    "title": "Items Packed Travel App",
-    "description": "This app ensures you pack all the necessary items for each journey",
-    "gitHubLink": "https://github.com/pangsui/pangsui-travel-list",
-    "url": "https://pangsui-travel-item.netlify.app/"
-  },
-  {
-    "title": "Pangsui Leno App",
-    "description": "An application that demonstrates the perfect application of CSS grids and flexbox",
-    "gitHubLink": "https://github.com/pangsui/linge-leno-website",
-    "url": "https://leno-pangsui.netlify.app"
-  },
-  {
-    "title": "Pangsui Turtor App",
-    "description": "An application that demonstrates the perfect application of CSS grids and flexbox",
-    "gitHubLink": "https://github.com/pangsui/Tutor-website",
-    "url": "https://pangsui-tutor.netlify.app"
-  },
-  {
-    "title": "Fictional Banking App2",
-    "description": "An application that demonstrates advanced DOM manipulation techniques in action",
-    "gitHubLink": "",
-    "url": "https://pangsuibankist2.netlify.app"
-  },
-  {
-    "title": "A Simple Pig Game",
-    "description": "An application where two players roll a dice, and the first to reach a 100 wins. Roll dice and hold your score",
-    "gitHubLink": "https://github.com/pangsui/pig-game-version-2",
-    "url": "https://pangsui-pig-game.netlify.app"
-  }
+	{
+		"title": "Movies Watched",
+		"description": "An application that allows users to fetch movies and rate them after watching.",
+		"gitHubLink": "https://github.com/pangsui/third-project",
+		"url": "https://pangsui-movies.netlify.app/"
+	},
+	{
+		"title": "Fictional Banking App",
+		"description": "An application for users to log in and perform basic banking transactions. Test accounts:User: pul, PIN: 3333User: mfm, PIN: 4444",
+		"gitHubLink": "https://github.com/pangsui/pangkist",
+		"url": "https://pangskist.netlify.app"
+	},
+	{
+		"title": "Track My Workout",
+		"description": "Use this application to track your workouts by clicking on the map and selecting either a running or cycling workout.",
+		"gitHubLink": "https://github.com/pangsui/workouts-pangsui",
+		"url": "https://pangsui-workouts-mapty.netlify.app/"
+	},
+	{
+		"title": "Billshare/Split App",
+		"description": "This app helps two people split their bills whenever they go shopping.",
+		"gitHubLink": "https://github.com/pangsui/outing-app",
+		"url": "https://pangsui-billing-app.netlify.app"
+	},
+	{
+		"title": "World Wise App",
+		"description": "This app shows a list of all places and countries that a person has visited. STILL UNDER DEVELOPMENT😇",
+		"gitHubLink": "https://github.com/pangsui/world-wise",
+		"url": "https://pangsui-world-wise.netlify.app/"
+	},
+
+	{
+		"title": "Pangsui Leno App",
+		"description": "An application that demonstrates the perfect application of CSS grids and flexbox",
+		"gitHubLink": "https://github.com/pangsui/linge-leno-website",
+		"url": "https://leno-pangsui.netlify.app"
+	},
+	{
+		"title": "Pangsui Turtor App",
+		"description": "An application that demonstrates the perfect application of CSS grids and flexbox",
+		"gitHubLink": "https://github.com/pangsui/Tutor-website",
+		"url": "https://pangsui-tutor.netlify.app"
+	},
+	{
+		"title": "Fictional Banking App2",
+		"description": "An application that demonstrates advanced DOM manipulation techniques in action",
+		"gitHubLink": "",
+		"url": "https://pangsuibankist2.netlify.app"
+	},
+	{
+		"title": "A Simple Pig Game",
+		"description": "An application where two players roll a dice, and the first to reach a 100 wins. Roll dice and hold your score",
+		"gitHubLink": "https://github.com/pangsui/pig-game-version-2",
+		"url": "https://pangsui-pig-game.netlify.app"
+	}
 ]

@@ -1,23 +1,23 @@
 [
-  {
-    "title": "Radio-Frequency Energy Harvesting Using Rapid 3D Plastronics Protoyping Approach: A Case Study",
-    "text": "This project showcases the design of RF energy harvesting using resin polymer as a substrate. The collected data were analyzed in MATLAB through several written scripts. It also demonstrates the use of Agile methodology in teamwork, with each author making individual contributions.",
-    "link": "https://www.mdpi.com/2079-9268/13/1/19"
-  },
-  {
-    "title": "Evaluation of Polylactic Acid Polymer as a Substrate in Rectenna for Ambient Radiofrequency Energy Harvesting",
-    "text": "This project showcases the design of RF energy harvesting using PLA polymer as a substrate. The collected data were analyzed in MATLAB through several written scripts, demonstrating a logical and critical thinking approach to conducting scientific research.",
-    "link": "https://www.mdpi.com/2079-9268/13/2/34"
-  },
+	{
+		"title": "Radio-Frequency Energy Harvesting Using Rapid 3D Plastronics Protoyping Approach: A Case Study",
+		"text": "This project focuses on RF energy harvesting with resin polymer as a substrate, using MATLAB for data analysis. It emphasizes Agile methodology and individual team contributions.",
+		"link": "https://www.mdpi.com/2079-9268/13/1/19"
+	},
+	{
+		"title": "Evaluation of Polylactic Acid Polymer as a Substrate in Rectenna for Ambient Radiofrequency Energy Harvesting",
+		"text": "This project focuses on RF energy harvesting with PLA polymer as a substrate, using MATLAB scripts to analyze data and demonstrate critical thinking in scientific research.",
+		"link": "https://www.mdpi.com/2079-9268/13/2/34"
+	},
 
-  {
-    "title": "Evaluation of Recycled Cardboard Paper as an Eco-Friendly Substrate for Rectenna and Ambient Radio Frequency Energy Harvesting Application",
-    "text": "This project showcases the design of RF energy harvesting using recycled cardboard as a substrate. The collected data were analyzed in Python and MATLAB through several custom scripts. An analytical and critical thinking approach was employed throughout the teamwork process.",
-    "link": "https://www.mdpi.com/2079-9292/13/13/2499"
-  },
-  {
-    "title": "Optimal Value of Rectifier Input Impedance in a Rectenna for Radio-Frequency Energy Harvesting",
-    "text": "This publication demonstrates the importance of input impedance in designing RF energy harvesting circuits. It showcases a critical and logical approach to solving scientific problems.",
-    "link": "NOT YET PUBLISHED"
-  }
+	{
+		"title": "Evaluation of Recycled Cardboard Paper as an Eco-Friendly Substrate for Rectenna and Ambient Radio Frequency Energy Harvesting Application",
+		"text": "This project designs RF energy harvesting with recycled cardboard as a substrate, using Python and MATLAB for data analysis and applying critical thinking throughout the process.",
+		"link": "https://www.mdpi.com/2079-9292/13/13/2499"
+	},
+	{
+		"title": "Optimal Value of Rectifier Input Impedance in a Rectenna for Radio-Frequency Energy Harvesting",
+		"text": "This publication demonstrates the importance of input impedance in designing RF energy harvesting circuits. It showcases a critical and logical approach to solving scientific problems.",
+		"link": "NOT YET PUBLISHED"
+	}
 ]

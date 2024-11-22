@@ -9,62 +9,62 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
 function App() {
-  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+	const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
-  useEffect(() => {
-    const allSections = sectionRefs.current;
-    // console.log(allSections);
-    const obsCallback: IntersectionObserverCallback = (entries, observer) => {
-      // biome-ignore lint/complexity/noForEach: <explanation>
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.remove("section--hidden");
-        observer.unobserve(entry.target);
-      });
-    };
+	useEffect(() => {
+		const allSections = sectionRefs.current;
+		// console.log(allSections);
+		const obsCallback: IntersectionObserverCallback = (entries, observer) => {
+			// biome-ignore lint/complexity/noForEach: <explanation>
+			entries.forEach((entry) => {
+				if (!entry.isIntersecting) return;
+				entry.target.classList.remove("section--hidden");
+				observer.unobserve(entry.target);
+			});
+		};
 
-    const observer = new IntersectionObserver(obsCallback, {
-      root: null,
-      threshold: 0.15,
-    });
+		const observer = new IntersectionObserver(obsCallback, {
+			root: null,
+			threshold: 0.15,
+		});
 
-    // biome-ignore lint/complexity/noForEach: <explanation>
-    allSections.forEach((section) => {
-      if (section) {
-        observer.observe(section);
-        section.classList.add("section--hidden"); // Initial hidden state
-      }
-    });
+		// biome-ignore lint/complexity/noForEach: <explanation>
+		allSections.forEach((section) => {
+			if (section) {
+				observer.observe(section);
+				section.classList.add("section--hidden"); // Initial hidden state
+			}
+		});
 
-    // Clean-up function
-    return () => {
-      // biome-ignore lint/complexity/noForEach: <explanation>
-      allSections.forEach((section) => {
-        if (section) observer.unobserve(section);
-      });
-    };
-  }, []);
+		// Clean-up function
+		return () => {
+			// biome-ignore lint/complexity/noForEach: <explanation>
+			allSections.forEach((section) => {
+				if (section) observer.unobserve(section);
+			});
+		};
+	}, []);
 
-  return (
-    <>
-      <Navbar />
-      <main className="main">
-        <Home />
-        {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-        <PortFolio ref={(el) => (sectionRefs.current[0] = el)} />
-        {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-        <Publications ref={(el) => (sectionRefs.current[1] = el)} />
-        {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-        <Certifications ref={(el) => (sectionRefs.current[2] = el)} />
-        {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-        <CurriculumVitae ref={(el) => (sectionRefs.current[3] = el)} />
-        {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-        <Contact ref={(el) => (sectionRefs.current[4] = el)} />
-      </main>
-      {/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
-      <Footer ref={(el) => (sectionRefs.current[5] = el)} />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<main className="main">
+				<Home />
+				{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+				<PortFolio ref={(el) => (sectionRefs.current[0] = el)} />
+				{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+				<Publications ref={(el) => (sectionRefs.current[1] = el)} />
+				{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+				<Certifications ref={(el) => (sectionRefs.current[2] = el)} />
+				{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+				<CurriculumVitae ref={(el) => (sectionRefs.current[3] = el)} />
+				{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+				<Contact ref={(el) => (sectionRefs.current[4] = el)} />
+			</main>
+			{/* biome-ignore lint/suspicious/noAssignInExpressions: <explanation> */}
+			<Footer ref={(el) => (sectionRefs.current[5] = el)} />
+		</>
+	);
 }
 
 export default App;

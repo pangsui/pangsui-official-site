@@ -51,14 +51,12 @@ img {
 	top: 0;
 	left: 0;
 	right: 0;
-	/* z-index: 1000; */
 	background-color: transparent;
 	transition: background-color 0.3s ease-in-out;
 }
 .navbar.scrolled {
 	position: fixed;
 	background-color: #7950f2;
-	/* padding: 0.2rem 2rem; */
 	opacity: 0.8;
 }
 .navbar__logo img {
@@ -69,7 +67,7 @@ img {
 .navbar__logo:hover::after {
 	content: " Dr. PANGSUI USIFU LINGE";
 	position: absolute;
-	top: 90%; /* Position it below the original element */
+	top: 90%;
 	left: 0;
 	color: #fff;
 	font-size: 14px;
@@ -139,7 +137,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 /* Home */
 .home {
@@ -222,6 +220,9 @@ img {
 	flex-wrap: wrap;
 	filter: drop-shadow(0 8px 5px #ebadae);
 	transition-duration: 0.5s;
+}
+.portfolio-item:hover {
+	transform: scale(1.1);
 }
 .title {
 	text-align: center;

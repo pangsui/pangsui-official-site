@@ -14,7 +14,7 @@ const Home = React.forwardRef<HTMLElement, object>(() => {
 				Udemy, I have developed dynamic, responsive web applications and thrive
 				in Agile, collaborative environments. Passionate about backend
 				technologies and data science, I aim to contribute to a team and grow my
-				expertise in the tech industry
+				expertise in the tech industry.
 			</p>
 		</section>
 	);

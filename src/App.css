@@ -592,8 +592,8 @@ textarea:focus {
 @media (max-width: 992px) {
 	/* navbar */
 	.navbar__logo img {
-		width: 80px;
-		height: 80px;
+		width: 75px;
+		height: 75px;
 	}
 
 	/* main */
@@ -606,7 +606,7 @@ textarea:focus {
 	.navbar__mobile-menu-toggle i {
 		position: relative;
 		bottom: 0.3rem;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 	/* portfolio */
 	.portfolio-grid {
@@ -629,12 +629,12 @@ textarea:focus {
 	}
 	.navbar__logo img {
 		border-radius: 50%;
-		width: 70px;
-		height: 70px;
+		width: 65px;
+		height: 65px;
 	}
 
 	.home p {
-		text-align: start;
+		font-weight: 400;
 	}
 	/* portfolio */
 	.portfolio-item {
@@ -703,8 +703,8 @@ textarea:focus {
 
 	.navbar__logo img {
 		border-radius: 50%;
-		width: 55px;
-		height: 55px;
+		width: 50px;
+		height: 50px;
 	}
 	/* portfolio */
 	.portfolio-grid {

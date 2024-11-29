@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Superhero Finder App",
+		"description": "An application that allows users to fetch super heros and view thier various characteristics.",
+		"gitHubLink": "https://github.com/WildCodeSchool-2024-09/JS-RemoteFR-Vendangeurs-P2-DevRAP/tree/main",
+		"url": "https://pagsuidex.netlify.app"
+	},
+	{
 		"title": "Movies Watched",
 		"description": "An application that allows users to fetch movies and rate them after watching.",
 		"gitHubLink": "https://github.com/pangsui/third-project",

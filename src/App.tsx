@@ -76,3 +76,4 @@ export default App;
 // https://dailytoast.io/
 // https://www.decrochetonalternance.fr  alternance
 // https://github.com/ioayoub/WCS0924_Eshop-Project
+// https://huemint.com/brand-2/ for colors

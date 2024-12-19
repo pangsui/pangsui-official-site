@@ -6,6 +6,12 @@
 		"url": "https://pagsuidex.netlify.app"
 	},
 	{
+		"title": "World Wise App",
+		"description": "This app shows a list of all places and countries that a person has visited. STILL UNDER DEVELOPMENT😇",
+		"gitHubLink": "https://github.com/pangsui/world-wise",
+		"url": "https://pangsui-world-wise.netlify.app/"
+	},
+	{
 		"title": "Movies Watched",
 		"description": "An application that allows users to fetch movies and rate them after watching.",
 		"gitHubLink": "https://github.com/pangsui/third-project",
@@ -22,13 +28,6 @@
 		"description": "Use this application to track your workouts by clicking on the map and selecting either a running or cycling workout.",
 		"gitHubLink": "https://github.com/pangsui/workouts-pangsui",
 		"url": "https://pangsui-workouts-mapty.netlify.app/"
-	},
-
-	{
-		"title": "World Wise App",
-		"description": "This app shows a list of all places and countries that a person has visited. STILL UNDER DEVELOPMENT😇",
-		"gitHubLink": "https://github.com/pangsui/world-wise",
-		"url": "https://pangsui-world-wise.netlify.app/"
 	},
 
 	{
